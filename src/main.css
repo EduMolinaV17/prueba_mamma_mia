@@ -1,0 +1,56 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'react-toastify/dist/ReactToastify.css';
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #17A2B8;
+    padding: 0;
+}
+.navbar {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  font-size: 25px;
+}
+.banner {
+    background-image: url('../public/300577092_749814116331033_3135293951537466298_n.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 220px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.banner::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+h1{
+  position: relative;
+}
+
+h5{
+  position: relative;
+}
+.galeria {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+    grid-auto-rows: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 10px;
+    padding: 1rem;
+    justify-items: center;
+  }
